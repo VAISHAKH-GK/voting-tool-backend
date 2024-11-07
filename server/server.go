@@ -13,6 +13,7 @@ func Run(port string) {
 
 	app.Post("/signup", handlers.Signup)
 	app.Post("/otp", handlers.SubmitOTP)
+	app.Post("/create-poll", handlers.CreatePoll)
 
 	app.Listen(":" + port)
 }
